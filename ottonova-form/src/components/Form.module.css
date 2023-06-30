@@ -1,0 +1,94 @@
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.logoBox {
+  position: absolute;
+  top: 38px;
+  left: 85%;
+  transform: translate(-50%);
+}
+
+.logoImg {
+  width: 51px;
+  height: 54px;
+}
+
+.logoContainer {
+  position: relative;
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  margin-bottom: 35px;
+  text-align: center;
+  margin-left: 45px;
+}
+
+.logoContainer span {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  background-image: linear-gradient(to top right, #0083ea, #20c2e0);
+  transform: rotate(0);
+}
+
+.child1 {
+  animation: rotateR 4s linear infinite;
+  border-radius: 58px 65px 67px 61px;
+  opacity: 0.5;
+  transform-origin: 49% 51%;
+}
+
+.child2 {
+  animation: rotateL 3.5s linear infinite;
+  border-radius: 60px 61px 58px 68px;
+  opacity: 0.3;
+  transform-origin: 51% 51%;
+}
+
+.child3 {
+  animation: rotateR 3s linear infinite;
+  border-radius: 59px 58px 57px 61px;
+  opacity: 0.5;
+  transform-origin: 51% 51%;
+}
+
+.title {
+  font-weight: bold;
+  color: #0083ea;
+  text-align: center;
+}
+
+.actions {
+  margin: 30px auto;
+}
+
+.button {
+  width: 300px;
+}
+
+.phone {
+  height: 40px;
+}
+
+.MuiToggleButtonGroup-root {
+  padding-left: 30px;
+}
+
+@keyframes rotateR {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateL {
+  to {
+    transform: rotate(-360deg);
+  }
+}
